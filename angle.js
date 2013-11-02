@@ -1,31 +1,31 @@
 // Specialty angular conversion functions
-function DegtoMOA( deg )
-{
-	return deg * 60;
+DegtoMOA = function(deg) {
+    "use strict";
+    return deg * 60;
 }
 
-function DegtoRad( deg )
-{
-	return deg * M_PI / 180;
+function DegtoRad(deg) {
+    "use strict";
+    return deg * 3.14159265359 / 180;
 }
 
-function MOAtoDeg( moa )
-{
-	return moa / 60;
+function MOAtoDeg(moa) {
+    "use strict";
+    return moa / 60;
 }
 
-function MOAtoRad( moa )
-{
-	return moa / 60 * M_PI / 180;
+function MOAtoRad(moa) {
+    "use strict";
+    return moa / 60 * 3.14159265359 / 180;
 }
 
-function RadtoDeg( rad )
-{
-	return rad * 180 / M_PI;
+function RadtoDeg(rad) {
+    "use strict";
+    return rad * 180 / 3.14159265359;
 }
 
-function RadtoMOA( rad )
-{
-	return rad * 60 * 180 / M_PI;
+function RadtoMOA(rad) {
+    "use strict";
+    return rad * 60 * 180 / 3.14159265359;
 }
 
